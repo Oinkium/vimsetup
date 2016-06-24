@@ -50,3 +50,5 @@ map <buffer> <F5> :w<Return>:se makeprg=pdflatex\ %<<Return>:make<Return>
 
 " <F6> View pdf
 map <buffer> <F6> :!evince %<.pdf &<Return>
+" <F9> View pdf (F6 doesn't work at university)
+map <buffer> <F9> :!evince %<.pdf &<Return>
