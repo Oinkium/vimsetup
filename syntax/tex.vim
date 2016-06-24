@@ -1,13 +1,8 @@
 " Vim syntax file
 " Language:	TeX
 " Maintainer:	Charles E. Campbell <NdrchipO@ScampbellPfamily.AbizM>
-<<<<<<< HEAD
-" Last Change:	Oct 20, 2015
+" Last Change:	24 Jun, 2016
 " Version:	90
-=======
-" Last Change:	Jan 20, 2016
-" Version:	91
->>>>>>> 6b578ad245a0b69f15d9553d2ca3584878340c05
 " URL:		http://www.drchip.org/astronaut/vim/index.html#SYNTAX_TEX
 "
 " Notes: {{{1
@@ -134,15 +129,10 @@ endif
 " g:tex_isk
 if exists("g:tex_isk")
  exe "setlocal isk=".g:tex_isk
-<<<<<<< HEAD
-else
- setlocal isk=48-57,a-z,A-Z,192-255
-=======
 elseif !has("patch-7.4.1141")
  setl isk=48-57,a-z,A-Z,192-255
 else
  syn iskeyword 48-57,a-z,A-Z,192-255
->>>>>>> 6b578ad245a0b69f15d9553d2ca3584878340c05
 endif
 if b:tex_stylish
   setlocal isk+=@-@
@@ -457,11 +447,7 @@ if !exists("g:tex_no_math")
  call TexNewMathZone("K","xalignat",1)
  call TexNewMathZone("L","xxalignat",0)
 
-<<<<<<< HEAD
  " (ADDED BY JG) Include the IEEEeqnarray environment too.
-=======
- " Also include IEEEeqnarray
->>>>>>> 6b578ad245a0b69f15d9553d2ca3584878340c05
  call TexNewMathZone("M","IEEEeqnarray",1)
 
  " Inline Math Zones: {{{2
