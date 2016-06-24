@@ -1,8 +1,8 @@
 " Vim syntax file
 " Language:	TeX
 " Maintainer:	Charles E. Campbell <NdrchipO@ScampbellPfamily.AbizM>
-" Last Change:	Jan 20, 2016
-" Version:	91
+" Last Change:	24 Jun, 2016
+" Version:	90
 " URL:		http://www.drchip.org/astronaut/vim/index.html#SYNTAX_TEX
 "
 " Notes: {{{1
@@ -447,7 +447,7 @@ if !exists("g:tex_no_math")
  call TexNewMathZone("K","xalignat",1)
  call TexNewMathZone("L","xxalignat",0)
 
- " Also include IEEEeqnarray
+ " (ADDED BY JG) Include the IEEEeqnarray environment too.
  call TexNewMathZone("M","IEEEeqnarray",1)
 
  " Inline Math Zones: {{{2
